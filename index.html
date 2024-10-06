@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon (5).ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Livreto de Oração/Celular</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="body">
+
+    <div class="cima" id="cima">
+        <div class="audio">
+            <div class="caixa_cima" id="caixa_cima">
+
+
+                <h1 id="MusicaAtual">Louvor Atual...</h1>
+
+                <audio id="audioPrincipal" src=""></audio>
+
+                <button class="btn2" onclick="MudarLouvor1()"><i class='bx bx-play' ></i></button>
+
+                <button class="btn2" onclick="MudarLouvor2()"><i class='bx bx-play' ></i></button>
+
+                <audio id="audio1" src="musicas/FHOP MUSIC ┃ TU ÉS + ÁGUAS PURIFICADORAS - [COM LETRA + LYRIC VIDEO].mp3"></audio>
+
+                <audio id="audio2" src="musicas/A Boa Parte (Ao Vivo) _ Fhop Music, Nívea Soares.mp3"></audio>
+
+                <audio id="audio3" src="musicas/Simão Cireneu - Sergio Lopes - Vídeo Oficial (1).mp3"></audio>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="container">
+        <h1 id="h1">
+            Livreto de
+            Oração</h1>
+        <div class="caixa-pesquisa">
+            <div class="caixa-img-input">
+                <input id="Dia" type="number" placeholder="Dia da oração...">
+                <img src="imagens/Lupa2.png" alt="" onclick="buscarLivro()" id="btn1">
+            </div>
+        </div>
+        <button class="btn1" id="btn1" onclick="CriarSalmos()">Orando pelo Salmos</button>
+        <button class="btn1" id="btn1" onclick="CriarIgreja()">Igreja Perseguida</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
